@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="Fa3styles.css">
 </head>
 <body>
+
   <h1>calcU</h1>
   <p>This page is a simple calculator. Enter two numbers, select an operation, and click the calculate button.</p>
-  
-  <input type="number" id="num1" placeholder="Num 1">
-  <input type="number" id="num2" placeholder="Num 2">
 
-  <div>
-    <label><input type="radio" name="operator" value="+" checked> +</label>
-    <label><input type="radio" name="operator" value="-"> -</label>
-    <label><input type="radio" name="operator" value="*"> *</label>
-    <label><input type="radio" name="operator" value="/"> /</label>
-    <label><input type="radio" name="operator" value="%"> %</label>
-  </div>
+  <input id="num1" placeholder="Num 1">
+  <input id="num2" placeholder="Num 2">
 
-  <button onclick="calculate()">Calculate</button>
+  <p>Click the button to display the result of the operation you want to use.</p>
 
-  <p id="result">Results will be displayed here.</p>
+  <button onclick="add()">+</button>
+  <button onclick="subtract()">-</button>
+  <button onclick="multiply()">*</button>
+  <button onclick="divide()">/</button>
+  <button onclick="remainder()">%</button>
 
-  <script src="script.js"></script>
+  <p id="demo">Results will be displayed here.</p>
+
+  <script src="calc.js"></script>
+
 </body>
 </html>
